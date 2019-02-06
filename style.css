@@ -1,5 +1,6 @@
 html{
     background-image: url(images/background.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -19,12 +20,15 @@ header{
 }
 
 header h1{
+    width: 0%;
     max-width: 10.88em;
     overflow: hidden;
     border-right: .6em solid #9d9d9d;
     white-space: nowrap;
     margin: 0 auto;
     animation: typing 2s steps(22, end);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes typing {
@@ -35,7 +39,7 @@ header h1{
 nav, section{
     opacity: 0;
     animation: fadein 2s;
-    animation-delay: 2s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
 }
 
