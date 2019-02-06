@@ -1,0 +1,87 @@
+html{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    color: #ececec;
+    font-size: 2vw;
+    font-family: monospace;
+    text-align: center;
+}
+
+header{
+    background-color: #1e1e1e;
+    border-style: solid;
+    border-radius: 10px;
+    margin-bottom: 1vw;
+}
+
+header h1{
+    max-width: 10.88em;
+    overflow: hidden;
+    border-right: .6em solid #9d9d9d;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2s steps(22, end);
+}
+
+@keyframes typing {
+    from { width: 0% }
+    to { width: 54% }
+}
+
+nav, section{
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+nav table{
+    width: 40%;
+}
+
+nav table td{
+    width: 33%;
+}
+
+nav a{
+    color: #ececec;
+    text-decoration: none;
+    padding: 0.5vw;
+}
+
+section table {
+    width: 80%;
+    border-spacing: 2vw;
+}
+
+section table img{
+    width: 20vw;
+    height: 10vw;
+}
+
+section table td{
+    width: 50%;
+    height: 20vw;
+    font-size: 1.5vw;
+    padding: 3vw;
+}
+
+nav a, section table td{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+nav a:hover, section table td:hover{
+    background-color: gray;
+    border-color: #ececec;
+}
