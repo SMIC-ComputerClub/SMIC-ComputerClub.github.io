@@ -88,30 +88,30 @@ nav a{
     padding: 0.5vw;
 }
 
-section table {
+#projects {
     width: 80%;
     border-spacing: 2vw;
 }
 
-section table img{
+#projects img{
     width: 20vw;
     height: 10vw;
 }
 
-section table td{
+#projects td{
     width: 50%;
     height: 20vw;
     font-size: 1.5vw;
     padding: 3vw;
 }
 
-nav a, section table td{
+nav a, #projects td{
     border-style: solid;
     border-radius: 10px;
     border-color: transparent;
 }
 
-nav a:hover, section table td:hover{
+nav a:hover, #projects td:hover{
     background-color: gray;
     border-color: #ececec;
 }
@@ -125,4 +125,21 @@ ul{
 h2{
     font-size: 2.5vw;
     margin: 0.5vw;
+}
+
+#contacts{
+    width: 80%;
+    border: solid;
+    border-radius: 10px;
+    border-color: #ececec;
+    margin-top: 2vw;
+}
+
+#contacts th{
+    font-size: 2vw;
+}
+
+#contacts td{
+    font-size: 1.5vw;
+    height: 2vw;
 }
