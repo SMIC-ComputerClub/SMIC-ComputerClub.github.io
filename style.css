@@ -109,6 +109,9 @@ nav a:hover, section table td:hover{
 
 ul{
     text-align: center;
+}
+
+li{
     list-style-position: inside;
 }
 
