@@ -106,3 +106,13 @@ nav a:hover, section table td:hover{
     background-color: gray;
     border-color: #ececec;
 }
+
+ul{
+    text-align: center;
+    list-style-position: inside;
+}
+
+h2{
+    font-size: 2.5vw;
+    margin: 0.5vw;
+}
