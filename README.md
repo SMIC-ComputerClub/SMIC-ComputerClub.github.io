@@ -1,2 +1,2 @@
 # SMIC-ComputerClub.github.io
-[Link](https://smiccomputer.club)
+[smiccomputer.club](https://smiccomputer.club)
