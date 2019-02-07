@@ -21,13 +21,30 @@ header{
 
 header h1{
     width: 0%;
-    max-width: 10.88em;
     overflow: hidden;
     border-right: .6em solid #9d9d9d;
     white-space: nowrap;
     margin: 0 auto;
+}
+
+#home{
+    max-width: 10.88em;
     animation: typing 2s steps(22, end);
     animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#about{
+    max-width: 3.01em;
+    animation: typing 4s steps(22, end);
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#contact{
+    max-width: 4.25em;
+    animation: typing 4s steps(22, end);
+    animation-delay: 2.5s;
     animation-fill-mode: forwards;
 }
 
