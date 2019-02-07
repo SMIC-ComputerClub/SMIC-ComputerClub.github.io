@@ -36,15 +36,15 @@ header h1{
 
 #about{
     max-width: 3.01em;
-    animation: typing 4s steps(22, end);
-    animation-delay: 3s;
+    animation: typing 2s steps(22, end);
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 #contact{
     max-width: 4.25em;
-    animation: typing 4s steps(22, end);
-    animation-delay: 2.5s;
+    animation: typing 2s steps(22, end);
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -55,8 +55,17 @@ header h1{
 
 nav, section{
     opacity: 0;
+}
+
+.home{
     animation: fadein 2s;
     animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.others{
+    animation: fadein 2s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
