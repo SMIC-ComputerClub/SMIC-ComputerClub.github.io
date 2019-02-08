@@ -144,3 +144,8 @@ h2{
     font-size: 1.5vw;
     height: 2vw;
 }
+
+.border{
+    border: solid;
+    border-radius: 10px;
+}
