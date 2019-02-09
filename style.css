@@ -112,7 +112,7 @@ nav a, #projects td{
 }
 
 nav a:hover, #projects td:hover{
-    background-color: gray;
+    background-color: rgba(192,192,192,0.3);
     border-color: #ececec;
 }
 
