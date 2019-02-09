@@ -143,6 +143,7 @@ nav a:hover, .project-container div:hover{
 
 @media only screen and (orientation: portrait){
     html{
+        background-image: none;
         font-size: 4vw;
     }
 
@@ -172,7 +173,7 @@ nav a:hover, .project-container div:hover{
 
     .project-container div{
         max-width: 100%;
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
     #about-list h2{
