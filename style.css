@@ -12,64 +12,54 @@ html{
     text-align: center;
 }
 
-header{
+.title{
     background-color: #1e1e1e;
     border-style: solid;
     border-radius: 10px;
     margin-bottom: 1vw;
 }
 
-header h1{
+.title h1{
     width: 0%;
+    max-width: min-content;
     overflow: hidden;
-    border-right: .6em solid #9d9d9d;
+    border-right: 2.5vw solid #9d9d9d;
     white-space: nowrap;
     margin: 0 auto;
+
+    animation: typing 2s steps(22, end);
+    animation-fill-mode: forwards;
 }
 
-#home{
-    max-width: 10.88em;
-    animation: typing 2s steps(22, end);
+#home-title{
     animation-delay: 2s;
-    animation-fill-mode: forwards;
 }
 
-#about{
-    max-width: 3.01em;
-    animation: typing 2s steps(22, end);
+#other-title{
     animation-delay: 1s;
-    animation-fill-mode: forwards;
 }
 
-#contact{
-    max-width: 4.25em;
-    animation: typing 2s steps(22, end);
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes typing {
+@keyframes typing{
     from { width: 0% }
     to { width: 54% }
 }
 
-nav, section{
+nav, main{
     opacity: 0;
+
+    animation: fadein 2s;
+    animation-fill-mode: forwards;
 }
 
-.home{
-    animation: fadein 2s;
+#home-nav, #home-main{
     animation-delay: 4s;
-    animation-fill-mode: forwards;
 }
 
-.others{
-    animation: fadein 2s;
+#other-nav, #other-main{
     animation-delay: 2s;
-    animation-fill-mode: forwards;
 }
 
-@keyframes fadein {
+@keyframes fadein{
     from { opacity: 0; }
     to { opacity: 1; }
 }
@@ -88,47 +78,57 @@ nav a{
     padding: 0.5vw;
 }
 
-#projects {
+.project-container{
     width: 80%;
-    border-spacing: 2vw;
+    margin: 1vw auto;
 }
 
-#projects img{
+.project-container img{
     width: 25vw;
     height: 15vw;
 }
 
-#projects td{
-    width: 50%;
-    height: 20vw;
-    font-size: 1.5vw;
-    padding: 3vw;
+.border{
+    border: solid;
+    border-radius: 10px;
 }
 
-nav a, #projects td{
+.project-container div{
+    max-width: 40%;
+    font-size: 1.5vw;
+    padding: 3vw;
+    margin: 1vw auto;
+}
+
+nav a, .project-container div{
     border-style: solid;
     border-radius: 10px;
     border-color: transparent;
 }
 
-nav a:hover, #projects td:hover{
+nav a:hover, .project-container div:hover{
     background-color: rgba(192,192,192,0.3);
     border-color: #ececec;
 }
 
-ul{
+.project-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-list ul{
     text-align: center;
     list-style-position: inside;
     margin-top: 5vw;
     list-style-type: square;
 }
 
-h2{
+#about-list h2{
     font-size: 2.5vw;
     margin: 0.5vw;
 }
 
-#contacts{
+#contacts table{
     width: 80%;
     border: solid;
     border-radius: 10px;
@@ -136,16 +136,66 @@ h2{
     margin-top: 2vw;
 }
 
-#contacts th{
-    font-size: 2vw;
-}
-
 #contacts td{
     font-size: 1.5vw;
     height: 2vw;
 }
 
-.border{
-    border: solid;
-    border-radius: 10px;
+@media only screen and (orientation: portrait){
+    html{
+        font-size: 4vw;
+    }
+
+    .title h1{
+        max-width: max-content;
+        border-right-width: 4vw;
+    }
+
+    @keyframes typing{
+        from { width: 0% }
+        to { width: 100% }
+    }
+
+    nav table{
+        width: 100%;
+    }
+
+    .project-container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .project-container img{
+        width: 50vw;
+        height: 30vw;
+    }
+
+    .project-container div{
+        max-width: 100%;
+        font-size: 4vw;
+    }
+
+    #about-list h2{
+        font-size: 4vw;
+    }
+
+    #contacts thead{
+        display: none;
+    }
+
+    #contacts tr{
+        display: block;
+        border-top: solid;
+        padding-top: 1.5vw;
+    }
+
+    #contacts #first-row{
+        border-top: none;
+    }
+
+    #contacts td{
+        display: block;
+        font-size: 3.5vw;
+        height: 7vw;
+    }
 }

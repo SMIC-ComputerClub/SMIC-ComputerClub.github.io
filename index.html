@@ -6,37 +6,39 @@
     </head>
     <body>
         <header>
-            <h1 id="home">SMIC COMPUTER CLUB</h1>
+            <div class="title">
+                <h1 id="home-title">SMIC COMPUTER CLUB</h1>
+            </div>
+            <nav id="home-nav">
+                <table align="center">
+                    <td>
+                        <a href="index.html">HOME</a>
+                    </td>
+                    <td>
+                        <a href="about.html">ABOUT</a>
+                    </td>
+                    <td>
+                        <a href="contact.html">CONTACT</a>
+                    </td>
+                </table>
+            </nav>
         </header>
-        <nav class="home">
-            <table align="center">
-                <td>
-                    <a href="index.html">HOME</a>
-                </td>
-                <td>
-                    <a href="about.html">ABOUT</a>
-                </td>
-                <td>
-                    <a href="contact.html">CONTACT</a>
-                </td>
-            </table>
-        </nav>
-        <section class="home">
-            <table align="center" id="projects">
-                <tr>
-                    <td onclick="location.href='https://www.logofhw.com'">
+        <main id="home-main">
+            <section>
+                <div class="project-container">
+                    <div id="log-of-HW" onclick="location.href='https://www.logofhw.com'">
                         <img src="images/log(HW).svg">
                         <br>
                         log(HW) is a platform for students to share and keep track of homework assignments more effectively.
-                    </td>
-                    <td onclick="location.href='http://smicjangpercy.weebly.com'">
+                    </div>
+                    <div id="GPATool" onclick="location.href='http://smicjangpercy.weebly.com'">
                         <img src="images/GPATool.png" class="border">
                         <br>
                         <br>
                         GPATool is a complex program that helps you calculate your High School GPA by simply entering some information.
-                    </td>
-                </tr>
-            </table>
-        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
