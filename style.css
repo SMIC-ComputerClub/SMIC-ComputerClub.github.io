@@ -4,9 +4,6 @@ html{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 
     color: #ececec;
@@ -175,7 +172,7 @@ nav a:hover, .project-container div:hover{
 
     .project-container div{
         max-width: 100%;
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     #about-list h2{
