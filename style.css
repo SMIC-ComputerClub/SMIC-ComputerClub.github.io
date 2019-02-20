@@ -115,6 +115,7 @@ nav a:hover, .project-container div:hover{
 .project-container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #about-list ul{
