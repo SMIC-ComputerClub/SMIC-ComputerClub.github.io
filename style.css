@@ -21,23 +21,18 @@ html{
 }
 
 .title h1{
-    width: 0%;
     max-width: min-content;
     overflow: hidden;
     border-right: 2.5vw solid #9d9d9d;
     white-space: nowrap;
     margin: 0 auto;
-
-    animation: typing 2s steps(22, end);
-    animation-fill-mode: forwards;
 }
 
 #home-title{
-    animation-delay: 2s;
-}
-
-#other-title{
-    animation-delay: 1s;
+    width: 0%;
+    animation: typing 1.5s steps(22, end);
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 }
 
 @keyframes typing{
@@ -45,19 +40,11 @@ html{
     to { width: 54% }
 }
 
-nav, main{
-    opacity: 0;
-
-    animation: fadein 2s;
-    animation-fill-mode: forwards;
-}
-
 #home-nav, #home-main{
-    animation-delay: 4s;
-}
-
-#other-nav, #other-main{
-    animation-delay: 2s;
+    opacity: 0;
+    animation: fadein 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
 }
 
 @keyframes fadein{
