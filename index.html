@@ -50,3 +50,16 @@
         </main>
     </body>
 </html>
+<script>
+    var title = document.getElementById("home-title");
+    var nav = document.getElementById("home-nav");
+    var main = document.getElementById("home-main");
+    title.style.animationPlayState = "paused";
+    nav.style.animationPlayState = "paused";
+    main.style.animationPlayState = "paused";
+    window.onload = function() {
+        title.style.animationPlayState = "running";
+        nav.style.animationPlayState = "running";
+        main.style.animationPlayState = "running";
+    }
+</script>
