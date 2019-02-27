@@ -11,11 +11,13 @@
     left: 0;
     right: 0;
     z-index: -1;
+}
+
+#other-background{
     filter: blur(2px);
 }
 
 #home-background{
-    filter: blur(0px);
     animation: backgroundin 1s;
     animation-fill-mode: forwards;
     animation-delay: 1.8s;
