@@ -1,12 +1,32 @@
-html{
+#home-background, #other-background{
     background-image: url(images/background.jpg);
-    background-color: black;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(2px);
+}
 
+#home-background{
+    filter: blur(0px);
+    animation: backgroundin 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes backgroundin{
+    from { filter: blur(0px); }
+    to { filter: blur(2px); }
+}
+
+html{
     color: #ececec;
     font-size: 2vw;
     font-family: monospace;
